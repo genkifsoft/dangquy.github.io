@@ -15,6 +15,10 @@ footer
         justify-content: space-between;
     }
     &__left{
+        padding: 0 10px;
+        @include breakpoint(tablets) {
+            width: 40%;
+        }
         @include breakpoint(sp) {
             width: 100%;
             padding-bottom: 10px;
@@ -22,9 +26,15 @@ footer
         width: calc(100% - 700px);
     }
     &__center{
+        padding: 0 10px;
+        @include breakpoint(tablets) {
+            width: 30%;
+        }
         @include breakpoint(sp) {
             padding-bottom: 10px;
         }
+    }&__right{
+        padding: 0 10px;
     }
 }
 .c-footer::after{

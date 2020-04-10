@@ -18,6 +18,10 @@ main{
 	max-width: $baseWidth;
 	margin: 0 auto;
 	margin: auto;
+	@include breakpoint(tablets) {
+		max-width: 900px;
+	}
+
 	@include breakpoint(sp) {
 		max-width: 500px;
 	}

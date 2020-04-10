@@ -9,6 +9,10 @@ list
     flex-wrap: wrap;
     justify-content: space-between;
     &__item{
+        @include breakpoint(tablets) {
+            width: 50%;
+            padding: 10px;
+        }
         @include breakpoint(sp) {
             width: 100%;
             padding: 0 10px;
@@ -26,12 +30,18 @@ list
     }
     &__item:nth-child(3n+1){
         padding: 0px 10px 0 0;
+        @include breakpoint(tablets) {
+            padding: 10px;
+        }
         @include breakpoint(sp) {
             padding: 10px;
         }
     }
     &__item:nth-child(3n+3){
         padding: 0px 0px 0 10px;
+        @include breakpoint(tablets) {
+            padding: 10px;
+        }
         @include breakpoint(sp) {
             padding: 10px;
         }
