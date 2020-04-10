@@ -1,0 +1,18 @@
+/*Header*/
+.c-header{
+    padding-bottom: 20px;
+    &__info{
+        background-color: #3d454c;
+        ul{
+            margin: auto;
+            display: flex;
+            color: #ffffff;
+            justify-content: flex-end;
+            max-width: $baseWidth;
+            li{
+                padding: 5px 10px;
+                float: left;
+            }
+        }
+    }
+}

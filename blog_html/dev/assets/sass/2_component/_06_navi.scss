@@ -1,0 +1,108 @@
+/*------------------------------------------------------------
+navi
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-menu{
+    @include breakpoint(sp) {
+        height: 75px;
+    }
+    height: 50px;
+    position: relative;
+    background-color: #fbca00;
+    &__icon{
+        display: none;
+        @include breakpoint(sp) {
+            // padding-top: 3px;
+            display: block;
+            width: 70px;
+            height: 70px;
+        }
+    }
+    
+    nav{
+        position: relative;
+        @include breakpoint(sp) {
+            justify-content: flex-end;
+            display: flex;
+            align-items: center;
+            height: 75px;
+        }
+        h1{
+            @include breakpoint(sp) {
+                position: absolute;
+                left: 0;
+                line-height: 75px;
+            }
+            padding: 0 10px;
+            font-weight: bold;
+            font-size: 2.0rem;
+            display: flex;
+            align-items: center;
+        }
+        display: flex;
+        justify-content: space-between;
+        ul{
+            height: 50px;
+            align-items: center;
+            display: flex;
+            display: flex;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            @include breakpoint(sp) {
+                height: 100vh;
+                z-index: 999;
+            }
+            li{
+                @include breakpoint(sp) {
+                    padding: 20px 0px 0px 0;
+                    color: #fff;
+                }
+                padding: 0 10px;
+            }
+
+            >li > ul{
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            >li:last-child {
+                z-index: 999;
+                position: relative;
+            }
+            >li:last-child:hover > ul{
+                height: auto;
+                margin-top: 30px;
+                display: block;
+                background-color: #fbca00f5;
+            }
+
+            >li:last-child > ul > li{
+                padding-bottom: 10px;
+            }
+            >li:last-child > ul li:hover{
+                display: block;
+            }
+            @include breakpoint(sp) {
+                display: block;
+                text-align: right;
+            }
+        }
+    }
+}
+.__hidden{
+    display: none;
+}
+.__show--menu{
+    text-align: center !important;
+    width: 100%;
+    position: absolute;
+    background-color: #615d50;
+    top: 75px;
+    li{
+        display: block;
+    }
+}
