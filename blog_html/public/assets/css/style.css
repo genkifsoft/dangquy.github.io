@@ -391,6 +391,10 @@ navi
   }
 }
 
+.c-menu nav ul > li:hover {
+  color: red;
+}
+
 .c-menu nav ul > li > ul {
   display: none;
   position: absolute;
@@ -418,12 +422,17 @@ navi
   background-color: #fbca00f5;
 }
 
+.c-menu nav ul > li:last-child:hover > ul li {
+  color: black;
+}
+
 .c-menu nav ul > li:last-child > ul > li {
   padding-bottom: 10px;
 }
 
 .c-menu nav ul > li:last-child > ul li:hover {
   display: block;
+  color: #fff;
 }
 
 @media only screen and (max-width: 767px) {

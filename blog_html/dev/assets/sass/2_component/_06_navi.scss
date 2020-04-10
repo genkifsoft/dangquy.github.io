@@ -61,6 +61,10 @@ navi
                 padding: 0 10px;
             }
 
+            >li:hover{
+                color: red;
+            }
+
             >li > ul{
                 display: none;
                 position: absolute;
@@ -83,12 +87,15 @@ navi
                 display: block;
                 background-color: #fbca00f5;
             }
-
+            >li:last-child:hover > ul li{
+                color: black;
+            }
             >li:last-child > ul > li{
                 padding-bottom: 10px;
             }
             >li:last-child > ul li:hover{
                 display: block;
+                color: #fff;
             }
             @include breakpoint(sp) {
                 display: none;
