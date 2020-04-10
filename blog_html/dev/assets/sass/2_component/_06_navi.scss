@@ -14,7 +14,6 @@ navi
     &__icon{
         display: none;
         @include breakpoint(sp) {
-            // padding-top: 3px;
             display: block;
             width: 70px;
             height: 70px;
@@ -46,7 +45,6 @@ navi
         ul{
             height: 50px;
             align-items: center;
-            display: flex;
             display: flex;
             font-size: 1.5rem;
             font-weight: bold;
@@ -87,22 +85,27 @@ navi
                 display: block;
             }
             @include breakpoint(sp) {
-                display: block;
+                display: none;
                 text-align: right;
             }
         }
     }
 }
 .__hidden{
-    display: none;
+    @include breakpoint(sp) {
+        display: none;
+    }
 }
 .__show--menu{
-    text-align: center !important;
-    width: 100%;
-    position: absolute;
-    background-color: #615d50;
-    top: 75px;
-    li{
-        display: block;
+    @include breakpoint(sp) {
+        display: none;
+        text-align: center !important;
+        width: 100%;
+        position: absolute;
+        background-color: #615d50;
+        top: 75px;
+        li{
+            display: block;
+        }
     }
 }

@@ -10,7 +10,6 @@ $('document').ready(function() {
         }
     });
 
-    $(".__show--menu").css('display', "none");
     $(".c-menu__icon").click(function() {
         $(".__show--menu").slideToggle();
         var existClassHidden = $(".close").hasClass("__hidden");
