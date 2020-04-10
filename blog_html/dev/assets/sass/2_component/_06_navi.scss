@@ -70,6 +70,10 @@ navi
             >li:last-child {
                 z-index: 999;
                 position: relative;
+                //test
+                @include breakpoint(sp) {
+                    display: none;
+                }
             }
             >li:last-child:hover > ul{
                 height: auto;

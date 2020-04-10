@@ -403,6 +403,12 @@ navi
   position: relative;
 }
 
+@media only screen and (max-width: 767px) {
+  .c-menu nav ul > li:last-child {
+    display: none;
+  }
+}
+
 .c-menu nav ul > li:last-child:hover > ul {
   height: auto;
   margin-top: 30px;
