@@ -482,6 +482,7 @@ list
 .col-3__img img {
   background-size: contain;
   height: 100%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
