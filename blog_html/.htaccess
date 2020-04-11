@@ -1,0 +1,5 @@
+RewriteEngine on
+DirectoryIndex public/index.html
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www.)?code-example.tk/.*$ [NC]
+RewriteRule .(gif|jpg)$ – [F]
